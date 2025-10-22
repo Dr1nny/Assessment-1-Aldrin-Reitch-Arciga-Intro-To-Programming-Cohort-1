@@ -7,7 +7,7 @@ months={'1' : 31,
         '5' : 31,
         '6' : 30,
         '7' : 31,
-        '8' : 31,
+         '8' : 31,
         '9' : 30,
         '10' : 31,
         '11' : 30,
@@ -24,7 +24,8 @@ elif number =='2':
     q = input("Is it currently a leap year? Answer in yes or no format. ").lower()
     #will ask if the current year is a leap year, using .lower will ensure the answer will stay lowercase.
     if q == "yes":
-        print(f"The month number {number} is February which has 29 days")
+        months["2"] = 29
+        print(f"The month number {number} is February which has {months[number]} days")
         #output = The month number 2 is February which has 29 days
     else:
         print(f"The month number {number} is February which has {months[number]} days")
